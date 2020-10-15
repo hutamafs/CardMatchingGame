@@ -66,8 +66,22 @@ import Card from '@/components/Card.vue'
 
 export default {
   name: 'Home',
+  data() {
+    return {
+      user:'',
+      users:[]
+    }
+  },
   components: {
     Card
+  },
+  sockets:{
+    'user-connected' (data) {
+      this.users = data
+    }
+  },
+  created() {
+    this.user = localStorage.playerone
   }
 }
 </script>
