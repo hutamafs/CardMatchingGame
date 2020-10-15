@@ -25,7 +25,7 @@
             </button>
           </form>
         </div>
-        <div class="col-8 font-lobster">
+        <div class="col-8 font-lobster bg-light">
           <h2 class="text-dark text-center">Welcome to</h2>
           <h2 class="text-dark text-center">blabla</h2>
         </div>

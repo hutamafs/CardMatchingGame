@@ -3,7 +3,9 @@
   padding: 0;
 }
 body {
-  background-image: radial-gradient(circle at 18% 40%, rgba(53, 53, 53,0.06) 0%, rgba(53, 53, 53,0.06) 50%,rgba(254, 254, 254,0.06) 50%, rgba(254, 254, 254,0.06) 100%),radial-gradient(circle at 66% 36%, rgba(126, 126, 126,0.06) 0%, rgba(126, 126, 126,0.06) 50%,rgba(70, 70, 70,0.06) 50%, rgba(70, 70, 70,0.06) 100%),radial-gradient(circle at 33% 100%, rgba(237, 237, 237,0.06) 0%, rgba(237, 237, 237,0.06) 50%,rgba(162, 162, 162,0.06) 50%, rgba(162, 162, 162,0.06) 100%),linear-gradient(90deg, hsl(141,0%,89%),hsl(141,0%,89%));
+  /* background-image: radial-gradient(circle at 18% 40%, rgba(53, 53, 53,0.06) 0%, rgba(53, 53, 53,0.06) 50%,rgba(254, 254, 254,0.06) 50%, rgba(254, 254, 254,0.06) 100%),radial-gradient(circle at 66% 36%, rgba(126, 126, 126,0.06) 0%, rgba(126, 126, 126,0.06) 50%,rgba(70, 70, 70,0.06) 50%, rgba(70, 70, 70,0.06) 100%),radial-gradient(circle at 33% 100%, rgba(237, 237, 237,0.06) 0%, rgba(237, 237, 237,0.06) 50%,rgba(162, 162, 162,0.06) 50%, rgba(162, 162, 162,0.06) 100%),linear-gradient(90deg, hsl(141,0%,89%),hsl(141,0%,89%)); */
+  background-image: url("background-card.jpg");
+  background-size: cover;
 }
 
 .container-flex {
