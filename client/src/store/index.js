@@ -5,19 +5,34 @@ Vue.use(Vuex)
 
 export default new Vuex.Store({
   state: {
-    equal:null
+    equal:false,
+    total:[],
+    src:''
   },
   mutations: {
-    compareValue(commit,payload) {
-      
+    compareValue(state,payload) {
+      if(state.total.length == 2) {
+        if(state.total[0] == state.total[1]) {
+          state.equal = true;
+        } else {
+          // di sini suru kartu buat flip lagi
+
+        }
+      } else if(state.total.length < 2) {
+          state.total.push(payload)
+      }
+    },
+    setCard(state,payload) {
+      state.src = payload
     }
   },
   actions: {
     checkValue(context,payload) {
-      console.log(payload,'angka')
       context.commit('compareValue',payload)
+    },
+    flipCard(context) {
+      context.commit('setCard','cardback.png')
     }
-
   },
   modules: {
   }

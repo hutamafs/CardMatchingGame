@@ -13,19 +13,28 @@ export default {
     flip() {
       if(this.source == 'cardback.png') {
         this.source = `${this.card}_of_spades.png`
-      } else {
-        this.source = `cardback.png`
+        this.$store.dispatch('checkValue',this.card)
+        this.total.push(this.card)
       }
-      this.$store.dispatch('checkValue',this.card)
-    }
+    },
   },
   data() {
     return {
       source:'cardback.png',
-      total : 0,
       //require(`../images/${card}_of_spades.png`)
     }
+  },
+  computed:{
+    cardBack() {
+      this.$store.state.src
+    }
+  },
+  watch:{
+    cardBack() {
+      this.source = this.cardBack
+    }
   }
+
 }
 </script>
 
