@@ -1,7 +1,7 @@
 <template>
         <div class="col-md-3" id="background-card">
           <!-- <img :src="require(`${source}`)" class="rounded mx-auto d-block p-2" alt="..."> -->
-          <img :src="require(`../images/${source}`)" class="rounded mx-auto d-block p-2" alt="..." @click="flip">
+          <img :src="require(`../images/${source}`)" class="rounded mx-auto d-block p-2 mb-1 mt-1" alt="..." @click="flip">
         </div>
 </template>
 
@@ -45,4 +45,15 @@ li {
 a {
   color: #42b983;
 }
+
+img {
+  cursor: pointer;
+}
+
+img:hover {
+  /* box-shadow: 0 0 3px 2px rgba(0, 140, 186, 0.5); */
+  box-shadow: 0 0 3px 2px white;
+}
+
+
 </style>
