@@ -1,9 +1,6 @@
 <template>
   <div id="app">
-    <!-- <div id="nav">
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
-    </div> -->
+    <!-- navbar -->
     <div class="container-flex">
       <div class="item-flex">Logo</div>
       <div class="item-flex">GAME</div>
