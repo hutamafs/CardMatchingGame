@@ -3,10 +3,10 @@
   <section>
     <div id="loginregister-container" class="p-3 m-5">
       <div class="row d-flex mt-5">
-        <div class="col-4 shadow register-login rounded bg-warning">
+        <div class="col-4 text-light register-login rounded bg-dark mt-5">
           <p class="mt-2 red">Please Login first</p>
           <form class="my-4" @submit.prevent="login">
-            <div class="form-group">
+            <div class="form-group ">
               <label for="email-login">Name</label>
               <input
                 type="text"
@@ -19,7 +19,7 @@
             <button
               type="submit"
               id="btn-login"
-              class="btn btn-light btn-outline-dark"
+              class="btn btn-light btn-outline-light"
             >
               Login
             </button>
@@ -35,8 +35,6 @@
 </template>
 
 <script>
-// import axios from '../axios/axiosInstance'
-
 export default {
   name: 'Login',
   components: {},
