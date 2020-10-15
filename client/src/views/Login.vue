@@ -45,12 +45,12 @@ export default {
   },
   methods: {
     login () {
-      let payload = {
-        name:this.name
+      const payload = {
+        name: this.name
       }
-      this.$socket.emit('user-connect',payload);
-      localStorage.setItem('playerone',this.name);
-      this.$router.push({name:'Home'});
+      this.$socket.emit('user-connect', payload)
+      localStorage.setItem('playerone', this.name)
+      this.$router.push({ name: 'Home' })
     }
   }
 }
