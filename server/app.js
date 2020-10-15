@@ -9,8 +9,16 @@ app.use(cors());
 app.use(express.urlencoded({extended:false}));
 app.use(express.json());
 
+let users = [];
+
+
 io.on('connection' , (socket) => {
-    console.log('an user connected')
+    console.log('an user connected');
+
+    socket.on('user-connect',(data) => {
+        users.push(data)
+        io.emit('user-connected',users);
+    })
 })
 
 

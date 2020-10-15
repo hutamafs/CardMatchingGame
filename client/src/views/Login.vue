@@ -46,31 +46,13 @@ export default {
     }
   },
   methods: {
-    // login () {
-    //   console.log(this.email, this.password)
-    //   axios({
-    //     url: '/users/login',
-    //     method: 'post',
-    //     data: {
-    //       email: this.email,
-    //       password: this.password
-    //     }
-    //   })
-    //     .then((accessToken) => {
-    //       console.log(accessToken.data.access_token, '<<< ini accessToken')
-    //       localStorage.setItem('accessToken', accessToken.data.access_token)
-    //       this.$router.push({ name: 'Home' })
-    //     })
-    //     .catch(err => {
-    //       console.log(err)
-    //     })
-    // }
     login () {
-      const payload = {
-        email: this.email,
-        password: this.password
+      let payload = {
+        name:this.name
       }
-      this.$store.dispatch('login', payload)
+      this.$socket.emit('user-connect',payload);
+      localStorage.setItem('playerone',this.name);
+      this.$router.push({name:'Home'});
     }
   }
 }
