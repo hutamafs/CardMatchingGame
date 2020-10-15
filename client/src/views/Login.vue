@@ -3,7 +3,7 @@
   <section>
     <div id="loginregister-container" class="p-3 m-5">
       <div class="row d-flex mt-5">
-        <div class="col-4 text-light register-login rounded bg-dark mt-5">
+        <div class="col-4 text-light register-login rounded bg-dark">
           <p class="mt-2 red">Please Login first</p>
           <form class="my-4" @submit.prevent="login">
             <div class="form-group ">
@@ -25,7 +25,7 @@
             </button>
           </form>
         </div>
-        <div class="col-8 font-lobster">
+        <div class="col-8 font-lobster bg-light">
           <h2 class="text-dark text-center">Welcome to</h2>
           <h2 class="text-dark text-center">blabla</h2>
         </div>
